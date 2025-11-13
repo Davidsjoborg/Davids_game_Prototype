@@ -2560,7 +2560,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ......22efffeeeeeeeeeefff2......
         `],
     100,
-    false
+    true
     )
     pause(200)
     animation.runImageAnimation(
