@@ -841,7 +841,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
-    pause(2000)
+    pause(1000)
     animation.runImageAnimation(
     hero,
     [img`
@@ -2560,7 +2560,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ......22efffeeeeeeeeeefff2......
         `],
     100,
-    true
+    false
     )
     pause(200)
     animation.runImageAnimation(
