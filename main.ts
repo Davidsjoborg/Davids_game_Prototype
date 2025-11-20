@@ -841,7 +841,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
-    pause(1000)
+    pause(2000)
     animation.runImageAnimation(
     hero,
     [img`
@@ -1983,7 +1983,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
-    pause(1000)
+    pause(900)
     animation.runImageAnimation(
     hero,
     [img`
@@ -7029,6 +7029,7 @@ hero = sprites.create(img`
     .........ffffffffffffff.........
     ..........ffffffffffff..........
     `, SpriteKind.Player)
+hero.setPosition(15, 105)
 hero.setStayInScreen(true)
 hero.ay = 320
 animation.runImageAnimation(
