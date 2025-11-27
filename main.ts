@@ -1585,8 +1585,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     500,
     false
     )
-    hero.vy = -100
-    pause(600)
+    hero.vy = -200
+    pause(1200)
     music.play(music.createSoundEffect(WaveShape.Square, 200, 1, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     animation.runImageAnimation(
     hero,
@@ -2371,6 +2371,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
+    music.play(music.createSoundEffect(WaveShape.Sine, 200, 1663, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     pause(200)
     animation.runImageAnimation(
     hero,
@@ -2683,7 +2684,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
-    pause(100)
+    pause(400)
     animation.runImageAnimation(
     hero,
     [img`
@@ -6103,6 +6104,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
+    music.play(music.createSoundEffect(WaveShape.Square, 400, 600, 0, 255, 200, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     animation.runImageAnimation(
     hero,
     [img`
