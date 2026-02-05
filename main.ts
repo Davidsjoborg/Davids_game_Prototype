@@ -7158,7 +7158,7 @@ hero = sprites.create(img`
     .........ffffffffffffff.........
     ..........ffffffffffff..........
     `, SpriteKind.Player)
-faceLeft = true
+faceLeft = false
 hero.setPosition(15, 105)
 hero.setStayInScreen(true)
 hero.ay = 320
@@ -7602,3 +7602,8 @@ let pixelsToMeters = 30
 let gravity = 9.81 * pixelsToMeters
 let levelCount = 8
 showInstruction("abc")
+game.onUpdate(function () {
+    if (faceLeft == true) {
+    	
+    }
+})
