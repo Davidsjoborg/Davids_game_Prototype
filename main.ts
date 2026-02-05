@@ -7594,7 +7594,7 @@ hero,
     .........ffffffffffffff.........
     ..........ffffffffffff..........
     `],
-200,
+500,
 true
 )
 controller.moveSprite(hero, 100, 0)
